@@ -1390,6 +1390,8 @@ namespace GeneratorGeffego
 
                 string pokerString = "";
 
+                counter = 0;
+
                 foreach (var item in poker.ValueArray)
                 {
                     pokerString += counter+": " +item + ", ";
@@ -1452,33 +1454,38 @@ namespace GeneratorGeffego
 
                 string zeroes = "";
                 string ones = "";
+                int counter = 1;
                 foreach (var item in series.SeriesZeroArray)
                 {
                     zeroes += item + ", ";
+                    counter++;
                 }
+                counter = 1;
                 foreach (var item in series.SeriesOneArray)
                 {
                     ones += item + ", ";
+                    counter++;
                 }
-
+                counter = 0;
                 string pokerString = "";
                 foreach (var item in poker.ValueArray)
                 {
-                    pokerString += item + ", ";
+                    pokerString += counter + ": "+item + ", ";
+                    counter++;
                 }
 
                 TestInputTextBox.Text = s;
 
                 TestsResultTextBox.Text = "Test pojedynczych bitów:\nLiczba jedynek: " + single.NumberOfOneBits + Environment.NewLine
-                    + "Wynik testu: " + BoolToPolishWord(single.TestPassed) + Environment.NewLine + Environment.NewLine+
-                    "Test serii:\nLiczba zer: "
-                    + zeroes + Environment.NewLine + "Liczba jedynek: " + ones + Environment.NewLine
-                    + "Wynik testu: " + BoolToPolishWord(series.TestPassed) + Environment.NewLine + Environment.NewLine+
-                    "Test długiej serii: " + Environment.NewLine +
-                    "Najdłuższy ciąg: " + longSeries.LongestSeries + Environment.NewLine
-                    + "Wynik testu: " + BoolToPolishWord(longSeries.TestPassed) + Environment.NewLine + Environment.NewLine+
-                    "Test pokerowy: " + pokerString + "Wartość: " + poker.Result + Environment.NewLine
-                    + "Wynik testu: " + BoolToPolishWord(poker.TestPassed);
+                                    + "Wynik testu: " + BoolToPolishWord(single.TestPassed) + Environment.NewLine + Environment.NewLine +
+                                    "Test serii:\nLiczba zer: "
+                                    + zeroes + Environment.NewLine + "Liczba jedynek: " + ones + Environment.NewLine
+                                    + "Wynik testu: " + BoolToPolishWord(series.TestPassed) + Environment.NewLine + Environment.NewLine +
+                                    "Test długiej serii: " + Environment.NewLine +
+                                    "Najdłuższy ciąg: " + longSeries.LongestSeries + Environment.NewLine
+                                    + "Wynik testu: " + BoolToPolishWord(longSeries.TestPassed) + Environment.NewLine + Environment.NewLine +
+                                    "Test pokerowy: " + pokerString + "Wartość: " + poker.Result + Environment.NewLine
+                                    + "Wynik testu: " + BoolToPolishWord(poker.TestPassed);
 
 
             }

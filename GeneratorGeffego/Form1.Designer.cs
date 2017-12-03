@@ -95,12 +95,12 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.TestsResultTextBox = new System.Windows.Forms.RichTextBox();
+            this.LoadSeriesTxtButton = new System.Windows.Forms.Button();
+            this.TestInputTextBox = new System.Windows.Forms.RichTextBox();
             this.LoadSeriesButton = new System.Windows.Forms.Button();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.TestInputTextBox = new System.Windows.Forms.RichTextBox();
-            this.LoadSeriesTxtButton = new System.Windows.Forms.Button();
-            this.TestsResultTextBox = new System.Windows.Forms.RichTextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage4.SuspendLayout();
@@ -591,7 +591,7 @@
             // LoadBinFileRadiobtn
             // 
             this.LoadBinFileRadiobtn.AutoSize = true;
-            this.LoadBinFileRadiobtn.Location = new System.Drawing.Point(478, 296);
+            this.LoadBinFileRadiobtn.Location = new System.Drawing.Point(583, 40);
             this.LoadBinFileRadiobtn.Name = "LoadBinFileRadiobtn";
             this.LoadBinFileRadiobtn.Size = new System.Drawing.Size(163, 21);
             this.LoadBinFileRadiobtn.TabIndex = 34;
@@ -602,7 +602,7 @@
             // LoadTxtFileRadiobtn
             // 
             this.LoadTxtFileRadiobtn.AutoSize = true;
-            this.LoadTxtFileRadiobtn.Location = new System.Drawing.Point(948, 20);
+            this.LoadTxtFileRadiobtn.Location = new System.Drawing.Point(583, 12);
             this.LoadTxtFileRadiobtn.Name = "LoadTxtFileRadiobtn";
             this.LoadTxtFileRadiobtn.Size = new System.Drawing.Size(170, 21);
             this.LoadTxtFileRadiobtn.TabIndex = 33;
@@ -808,6 +808,35 @@
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "Testy Fips";
             // 
+            // TestsResultTextBox
+            // 
+            this.TestsResultTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.TestsResultTextBox.Location = new System.Drawing.Point(8, 229);
+            this.TestsResultTextBox.Name = "TestsResultTextBox";
+            this.TestsResultTextBox.ReadOnly = true;
+            this.TestsResultTextBox.Size = new System.Drawing.Size(1103, 380);
+            this.TestsResultTextBox.TabIndex = 3;
+            this.TestsResultTextBox.Text = "";
+            // 
+            // LoadSeriesTxtButton
+            // 
+            this.LoadSeriesTxtButton.Location = new System.Drawing.Point(560, 17);
+            this.LoadSeriesTxtButton.Name = "LoadSeriesTxtButton";
+            this.LoadSeriesTxtButton.Size = new System.Drawing.Size(551, 44);
+            this.LoadSeriesTxtButton.TabIndex = 2;
+            this.LoadSeriesTxtButton.Text = "Wczytaj ciąg tekstowy";
+            this.LoadSeriesTxtButton.UseVisualStyleBackColor = true;
+            this.LoadSeriesTxtButton.Click += new System.EventHandler(this.LoadSeriesTxtButton_Click);
+            // 
+            // TestInputTextBox
+            // 
+            this.TestInputTextBox.Location = new System.Drawing.Point(8, 67);
+            this.TestInputTextBox.Name = "TestInputTextBox";
+            this.TestInputTextBox.ReadOnly = true;
+            this.TestInputTextBox.Size = new System.Drawing.Size(1103, 156);
+            this.TestInputTextBox.TabIndex = 1;
+            this.TestInputTextBox.Text = "";
+            // 
             // LoadSeriesButton
             // 
             this.LoadSeriesButton.Location = new System.Drawing.Point(8, 17);
@@ -821,35 +850,6 @@
             // saveFileDialog1
             // 
             this.saveFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.saveFileDialog1_FileOk);
-            // 
-            // TestInputTextBox
-            // 
-            this.TestInputTextBox.Location = new System.Drawing.Point(8, 67);
-            this.TestInputTextBox.Name = "TestInputTextBox";
-            this.TestInputTextBox.ReadOnly = true;
-            this.TestInputTextBox.Size = new System.Drawing.Size(1103, 229);
-            this.TestInputTextBox.TabIndex = 1;
-            this.TestInputTextBox.Text = "";
-            // 
-            // LoadSeriesTxtButton
-            // 
-            this.LoadSeriesTxtButton.Location = new System.Drawing.Point(560, 17);
-            this.LoadSeriesTxtButton.Name = "LoadSeriesTxtButton";
-            this.LoadSeriesTxtButton.Size = new System.Drawing.Size(551, 44);
-            this.LoadSeriesTxtButton.TabIndex = 2;
-            this.LoadSeriesTxtButton.Text = "Wczytaj ciąg tekstowy";
-            this.LoadSeriesTxtButton.UseVisualStyleBackColor = true;
-            this.LoadSeriesTxtButton.Click += new System.EventHandler(this.LoadSeriesTxtButton_Click);
-            // 
-            // TestsResultTextBox
-            // 
-            this.TestsResultTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.TestsResultTextBox.Location = new System.Drawing.Point(8, 302);
-            this.TestsResultTextBox.Name = "TestsResultTextBox";
-            this.TestsResultTextBox.ReadOnly = true;
-            this.TestsResultTextBox.Size = new System.Drawing.Size(1103, 307);
-            this.TestsResultTextBox.TabIndex = 3;
-            this.TestsResultTextBox.Text = "";
             // 
             // Form1
             // 
